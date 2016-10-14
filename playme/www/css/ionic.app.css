@@ -9826,7 +9826,7 @@ a.button {
   display: block;
   margin-bottom: 20px;
   text-align: center;
-  margin: 20px; }
+  margin: 20px 40px 20px 40px; }
 
 .form-login input {
   text-align: center; }
@@ -9834,7 +9834,7 @@ a.button {
 .button-test {
   background-color: #000;
   color: #fff;
-  width: 90%; }
+  width: 78%; }
 
 .sign-button {
   background-color: Transparent;
@@ -9847,10 +9847,11 @@ a.button {
 
 .check {
   float: left;
-  margin: 20px; }
+  margin: 10px;
+  width: 100%; }
 
 .logo {
-  margin: 75px 0 70px 0; }
+  margin: 85px 0 50px 0; }
   .logo h1 {
     color: #fff; }
   .logo span {
