@@ -23,25 +23,25 @@ angular.module('playme', ['ionic'])
 
   .state('login', {
     url: '/login',
-    templateUrl: 'templates/login/login.html',
+    templateUrl: 'components/login/login.html',
     controller: 'LoginController'
   })
 
-  .state('topAlbums', {
-    url: '/topAlbums',
-    //templateUrl: 'templates/topAlbums/topAlbums.html',
-    //controller: 'TopAlbumsController'
+  .state('favorites', {
+    url: '/favorites',
+    templateUrl: 'components/favorites/favorites.html',
+    controller: 'FavoritesController'
   })
 
-  .state('albumsList', {
-    url: '/albumsList',
-    //templateUrl: 'templates/albumsList/albumsList.html',
-    //controller: 'AlbumsListController'
+  .state('albums', {
+    url: '/albums',
+    //templateUrl: 'components/albums/albums.html',
+    //controller: 'AlbumsController'
   })
 
   .state('player', {
     url: '/player',
-    //templateUrl: 'templates/player/player.html',
+    //templateUrl: 'components/player/player.html',
     //controller: 'PlayerController'
   });
 

@@ -1,0 +1,43 @@
+.login {
+  background: linear-gradient(#FF0000, #A64CA6);
+  color: #ffffff;
+  align-items: center;
+  text-align: center;
+  font-family: 'Roboto', sans-serif; }
+
+.form-login .item {
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+  margin: 20px 40px 20px 40px; }
+
+.form-login input {
+  text-align: center; }
+
+.button-test {
+  background-color: #000;
+  color: #fff;
+  width: 78%; }
+
+.sign-button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  color: #fff; }
+
+.check {
+  float: left;
+  margin: 10px;
+  width: 100%; }
+
+.logo {
+  margin: 85px 0 50px 0; }
+  .logo h1 {
+    color: #fff; }
+  .logo span {
+    font-weight: 100; }
+  .logo img {
+    width: 25%; }

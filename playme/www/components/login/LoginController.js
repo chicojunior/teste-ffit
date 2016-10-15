@@ -7,7 +7,7 @@ angular
   function LoginController($scope, $state) {
 
     $scope.login = function () {
-      $state.go("topAlbums");
+      $state.go("favorites");
     }
-    
+
   } //fim do controller
