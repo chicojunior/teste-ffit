@@ -6,5 +6,4 @@ angular
 
   function PlayerController($scope) {
 
-
   } //fim do controller

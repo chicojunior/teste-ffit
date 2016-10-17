@@ -27,8 +27,4 @@ angular
       }
     ];
 
-    // $scope.toggleLeft = function() {
-    //   $ionicSideMenuDelegate.toggleLeft();
-    // };
-
   } //fim do controller
