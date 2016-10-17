@@ -6,15 +6,29 @@ angular
 
   function FavoritesController($scope, $state, $ionicSideMenuDelegate) {
 
-    $scope.toggleLeft = function() {
-      $ionicSideMenuDelegate.toggleLeft();
-    };
+    $scope.favorites = [
+      {
+        cover: "https://upload.wikimedia.org/wikipedia/en/5/5c/Metallica_-_Kill_'Em_All_cover.jpg",
+        artist: "Metallica",
+        album: "Kill'em All",
+        duration: "51:18"
+      },
+      {
+        cover: "https://upload.wikimedia.org/wikipedia/en/5/5c/Metallica_-_Kill_'Em_All_cover.jpg",
+        artist: "Metallica",
+        album: "Kill'em All",
+        duration: "51:18"
+      },
+      {
+        cover: "https://upload.wikimedia.org/wikipedia/en/5/5c/Metallica_-_Kill_'Em_All_cover.jpg",
+        artist: "Metallica",
+        album: "Kill'em All",
+        duration: "51:18"
+      }
+    ];
 
-    $scope.items = [
-      "Top Albums",
-      "Bands",
-      "Albums",
-      "Playlists"
-    ]
+    // $scope.toggleLeft = function() {
+    //   $ionicSideMenuDelegate.toggleLeft();
+    // };
 
   } //fim do controller

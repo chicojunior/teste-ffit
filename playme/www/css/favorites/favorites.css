@@ -1,0 +1,7 @@
+.favorites .album-item, .favorites .item {
+  display: inline-block;
+  margin-left: 10%; }
+
+.favorites .item-avatar {
+  text-align: center;
+  padding: 0; }

@@ -1,0 +1,36 @@
+<ion-side-menus class="home">
+  <ion-side-menu-content ng-controller="HomeController">
+    <ion-pane>
+      <button menu-toggle="left" class="button button-icon icon ion-navicon" ng-click="toggleLeft()"></button>
+      <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+    </ion-pane>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left" class="side-menu">
+    <ion-content>
+      <div class="logo">
+        <img src="img/headphones.svg" />
+        <h1>Play<span>me</span></h1>
+      </div>
+
+      <div class="lista">
+        <ion-list>
+          <ion-item class="playme-item" nav-clear menu-close href="#/playme/favorites">
+            Top Albums
+          </ion-item>
+          <ion-item nav-clear menu-close href="#/playme/">
+            Bands
+          </ion-item>
+          <ion-item nav-clear menu-close href="#/playme/albums">
+            Albums
+          </ion-item>
+          <ion-item nav-clear menu-close href="#/playme/">
+            Playlists
+          </ion-item>
+        </ion-list>
+      </div>
+
+    </ion-content>
+
+  </ion-side-menu>
+</ion-side-menus>

@@ -1,0 +1,40 @@
+
+
+.home {
+  .side-menu {
+    background: linear-gradient(#FF0000, #A64CA6)!important;
+  }
+
+  .item-content, a, .item-complex {
+    background: transparent;
+    color: #fff;
+    border-color: #fff;
+    border-width: 1px;
+
+    &:first-child {
+      border: none;
+    }
+  }
+
+  .logo {
+
+    text-align: center;
+    margin-top: 20px;
+
+    h1 {
+      color: #fff;
+    }
+
+    span {
+      font-weight: 100;
+    }
+
+    img {
+      width: 25%;
+    }
+  }
+
+  .playme-item {
+
+  }
+}

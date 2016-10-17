@@ -22,5 +22,9 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import "www/lib/ionic/scss/ionic";
 
 //estilos dos componentes
-@import "www/components/login/login";
+@import "www/components/albums/albums";
 @import "www/components/favorites/favorites";
+@import "www/components/home/home";
+@import "www/components/login/login";
+@import "www/components/player/player";
+@import "www/components/sidemenu/sidemenu";

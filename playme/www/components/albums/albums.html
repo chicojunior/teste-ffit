@@ -1,0 +1,13 @@
+<ion-view view-title="Albums" class="albums">
+  <ion-content>
+    <div class="list" ng-repeat="album in albums">
+      <a class="item item-thumbnail-left" href="">
+        <img ng-src="{{ album.cover }}"/>
+        <div>
+          <p>{{ album.album }}</p>
+          <p>{{ album.duration }}</p>
+        </div>
+      </a>
+    </div>
+  </ion-content>
+</ion-view>

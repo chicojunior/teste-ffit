@@ -2,38 +2,59 @@
 	<ion-content ng-controller="LoginController as login">
 
     <div class="logo">
-      <img src="../../img/headphones.svg" />
+      <img src="img/headphones.svg" />
       <h1>Play<span>me</span></h1>
       <p>
         Music follow you everywhere you are
       </p>
     </div>
 
-    <div class="form-login">
-			<form>
-				<label class="item item-input">
-	        <input type="text" placeholder="Username" ng-model="user" required>
-	      </label>
-	      <label class="item item-input">
-	        <input type="password" ng-model="pass" required>
-	      </label>
-	      <div>
-	        <button class="button button-test" ng-click="login()">
-	          Login
-	        </button>
-	      </div>
-	      <div class="check">
-	        <input type="checkbox" name="name" value="">Remember Password
-	      </div>
-			</form>
+		<div class="form-login">
+			<flipper flipped="flipped" horizontal>
+					<front>
+							<label class="item item-input">
+								<i class="icon ion-person placeholder-icon"></i>
+								<input type="text" placeholder="Username" ng-model="user" required>
+							</label>
+							<label class="item item-input">
+								<i class="icon ion-key placeholder-icon"></i>
+								<input type="password" placeholder="Password">
+							</label>
+							<div>
+								<button class="button button-test" ng-click="login()">
+									Login
+								</button>
+							</div>
+							<div class="check">
+								<input type="checkbox" name="name" value="">Remember Password
+							</div>
+					</front>
 
-      <div>
-        <button class="button sign-button">
-          Sign Up
-        </button>
-      </div>
-    </div>
-
-
+					<back>
+							<label class="item item-input">
+								<i class="icon ion-person placeholder-icon"></i>
+								<input type="text" placeholder="Username" ng-model="user" required>
+							</label>
+							<label class="item item-input">
+								<i class="icon ion-key placeholder-icon"></i>
+								<input type="password" placeholder="Password">
+							</label>
+							<label class="item item-input">
+								<i class="icon ion-key placeholder-icon"></i>
+								<input type="password" placeholder="Confirm Password">
+							</label>
+							<div>
+								<button class="button button-test" ng-click="login()">
+									Save
+								</button>
+							</div>
+					</back>
+			</flipper>
+		</div>
+		<div class="flip-button">
+			<button class="button sign-button" ng-click="flip()" ng-if="!flipped? buttonText='Sign Up' : buttonText='Cancel'">
+				{{ buttonText }}
+			</button>
+		</div>
   </ion-content>
 </ion-view>

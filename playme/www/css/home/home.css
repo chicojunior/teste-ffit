@@ -1,0 +1,20 @@
+.home .side-menu {
+  background: linear-gradient(#FF0000, #A64CA6) !important; }
+
+.home .item-content, .home a, .home .item-complex {
+  background: transparent;
+  color: #fff;
+  border-color: #fff;
+  border-width: 1px; }
+  .home .item-content:first-child, .home a:first-child, .home .item-complex:first-child {
+    border: none; }
+
+.home .logo {
+  text-align: center;
+  margin-top: 20px; }
+  .home .logo h1 {
+    color: #fff; }
+  .home .logo span {
+    font-weight: 100; }
+  .home .logo img {
+    width: 25%; }

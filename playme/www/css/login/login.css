@@ -1,43 +1,78 @@
 .login {
-  background: linear-gradient(#FF0000, #A64CA6);
+  background: linear-gradient(#FF1a43, #ff0d73);
   color: #ffffff;
   align-items: center;
   text-align: center;
   font-family: 'Roboto', sans-serif; }
-
-.form-login .item {
-  display: block;
-  margin-bottom: 20px;
-  text-align: center;
-  margin: 20px 40px 20px 40px; }
-
-.form-login input {
-  text-align: center; }
+  .login i {
+    color: #ff0d73; }
+  .login .item-input, .login .item {
+    text-align: center;
+    margin-bottom: 15px; }
+    .login .item-inputinput, .login .iteminput {
+      text-align: center; }
+  .login .form-login {
+    margin: 0 auto; }
+  .login .logo {
+    margin: 75px 0 35px 0; }
+    .login .logo h1 {
+      color: #fff; }
+    .login .logo span {
+      font-weight: 100; }
+    .login .logo img {
+      width: 25%; }
 
 .button-test {
   background-color: #000;
   color: #fff;
-  width: 78%; }
+  width: 100%;
+  border-radius: 0; }
 
 .sign-button {
-  background-color: Transparent;
+  text-align: center;
+  background-color: inherit;
   background-repeat: no-repeat;
   border: none;
-  cursor: pointer;
   overflow: hidden;
   outline: none;
-  color: #fff; }
+  color: #fff;
+  margin-top: 250px; }
+  .sign-button:hover {
+    color: #fff; }
+  .sign-button:active {
+    background-color: inherit; }
 
 .check {
   float: left;
   margin: 10px;
   width: 100%; }
 
-.logo {
-  margin: 85px 0 50px 0; }
-  .logo h1 {
-    color: #fff; }
-  .logo span {
-    font-weight: 100; }
-  .logo img {
-    width: 25%; }
+flipper {
+  display: block;
+  perspective: 1000; }
+  flipper .tile {
+    width: 100%;
+    padding: 0 10px 0 10px; }
+  flipper > div.flipper {
+    position: relative;
+    transform-style: preserve-3d; }
+    flipper > div.flipper .front, flipper > div.flipper .back {
+      padding: 0 25px 0 25px;
+      backface-visibility: hidden;
+      position: absolute;
+      transform-style: preserve-3d;
+      transition: transform ease 500ms; }
+    flipper > div.flipper .front {
+      z-index: 2; }
+
+flipper[horizontal] .front {
+  transform: rotateY(0deg); }
+
+flipper[horizontal] .back {
+  transform: rotateY(-180deg); }
+
+flipper[horizontal] div.flipper.flipped .front {
+  transform: rotateY(180deg); }
+
+flipper[horizontal] div.flipper.flipped .back {
+  transform: rotateY(0deg); }

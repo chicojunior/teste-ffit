@@ -1,8 +1,16 @@
-.sidemenu {
-  background: linear-gradient(#FF0000, #A64CA6);
-  color: #ffffff;
+.favorites {
 
-  .list {
-    margin-top: 45px!important;
+
+  .album-item, .item {
+    display: inline-block;
+    margin-left: 10%;
+
   }
+
+  .item-avatar {
+    text-align: center;
+    padding: 0;
+  }
+
+
 }

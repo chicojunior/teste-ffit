@@ -1,8 +1,3 @@
-// Ionic Starter App
-
-// angular.module is a global place for creating, registering and retrieving Angular modules
-// 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
-// the 2nd parameter is an array of 'requires'
 angular.module('playme', ['ionic'])
 
 .run(function($ionicPlatform) {
@@ -27,22 +22,41 @@ angular.module('playme', ['ionic'])
     controller: 'LoginController'
   })
 
-  .state('favorites', {
+  .state('playme', {
+    url: '/playme',
+    abstract: true,
+    templateUrl: 'components/home/home.html',
+    controller: 'HomeController'
+  })
+
+  .state('playme.favorites', {
     url: '/favorites',
-    templateUrl: 'components/favorites/favorites.html',
-    controller: 'FavoritesController'
+    views: {
+        'menuContent': {
+          templateUrl: 'components/favorites/favorites.html',
+          controller: 'FavoritesController'
+        }
+      }
   })
 
-  .state('albums', {
+  .state('playme.albums', {
     url: '/albums',
-    //templateUrl: 'components/albums/albums.html',
-    //controller: 'AlbumsController'
+    views: {
+        'menuContent': {
+          templateUrl: 'components/albums/albums.html',
+          controller: 'AlbumsController'
+        }
+      }
   })
 
-  .state('player', {
+  .state('playme.player', {
     url: '/player',
-    //templateUrl: 'components/player/player.html',
-    //controller: 'PlayerController'
+    views: {
+        'menuContent': {
+          templateUrl: 'components/player/player.html',
+          controller: 'PlayerController'
+        }
+      }
   });
 
   $urlRouterProvider.otherwise('/login');
